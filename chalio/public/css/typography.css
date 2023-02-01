@@ -1,0 +1,81 @@
+/*-----------------------------------------------------------------------
+TYPOGRAPHY
+
+* @Version:    1.0 - 2016
+* @author:     Storytrail
+
+-----------------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'f-Regular';
+  src: url('../fonts/f-Regular.eot');
+  src: url('../fonts/f-Regular.eot@') format('embedded-opentype'),
+       url('../fonts/f-Regular.woff2') format('woff2'),
+       url('../fonts/f-Regular.woff') format('woff'),
+       url('../fonts/f-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/** =RENDERING **/
+html, body{
+    text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; font-smoothing: antialiased;
+    -moz-font-feature-settings:"smcp" 1, "onum" 1, "frac" 1, "kern" 1, "liga" 1, "dlig" 1, "swsh" 1;
+    -moz-font-feature-settings:"smcp=1, onum=1, frac=1, kern=1, liga=1, dlig=1, swsh=1";
+    -ms-font-feature-settings:"smcp" 1, "onum" 1, "frac" 1, "kern" 1, "liga" 1, "dlig" 1, "swsh" 1;
+    -o-font-feature-settings:"smcp" 1, "onum" 1, "frac" 1, "kern" 1, "liga" 1, "dlig" 1, "swsh" 1;
+    -webkit-font-feature-settings:"smcp" 1, "onum" 1, "frac" 1, "kern" 1, "liga" 1, "dlig" 1, "swsh" 1;
+    font-feature-settings:"smcp" 1, "onum" 1, "frac" 1, "kern" 1, "liga" 1, "dlig" 1, "swsh" 1;
+}
+
+/* Chrome doesn't assume text rendering for form elements */
+input,
+textarea,
+select,
+button {
+  text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; font-smoothing: antialiased;
+  -moz-font-feature-settings:"smcp" 1, "onum" 1, "frac" 1, "kern" 1, "liga" 1, "dlig" 1, "swsh" 1;
+  -moz-font-feature-settings:"smcp=1, onum=1, frac=1, kern=1, liga=1, dlig=1, swsh=1";
+  -ms-font-feature-settings:"smcp" 1, "onum" 1, "frac" 1, "kern" 1, "liga" 1, "dlig" 1, "swsh" 1;
+  -o-font-feature-settings:"smcp" 1, "onum" 1, "frac" 1, "kern" 1, "liga" 1, "dlig" 1, "swsh" 1;
+  -webkit-font-feature-settings:"smcp" 1, "onum" 1, "frac" 1, "kern" 1, "liga" 1, "dlig" 1, "swsh" 1;
+  font-feature-settings:"smcp" 1, "onum" 1, "frac" 1, "kern" 1, "liga" 1, "dlig" 1, "swsh" 1;
+}
+.text-subs,
+.sub, sub {
+  -moz-font-feature-settings:"subs" 1; -moz-font-feature-settings:"subs=1";
+  -ms-font-feature-settings:"subs" 1; -o-font-feature-settings:"subs" 1;
+  -webkit-font-feature-settings:"subs" 1; font-feature-settings:"subs" 1;
+}
+.text-sups,
+.sup, sup {
+  -moz-font-feature-settings:"sups" 1; -moz-font-feature-settings:"sups=1";
+  -ms-font-feature-settings:"sups" 1; -o-font-feature-settings:"sups" 1;
+  -webkit-font-feature-settings:"sups" 1; font-feature-settings:"sups" 1;
+}
+.sub, sub,
+.sup, sup {
+  position: relative;
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+}
+.sup, sup { top: -0.5em; }
+.sub, sub { bottom: -0.25em;}
+
+/*******  *******/
+p { padding-bottom: 10px;}
+p:last-child { padding-bottom: 0; }
+
+/** =WEIGHT STYLE **/
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Reglo Bold', helvetica, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/** =ALIGNMENT **/
+.txt-center { text-align: center;}
+.txt-left { text-align: left;}
+.txt-right { text-align: right;}

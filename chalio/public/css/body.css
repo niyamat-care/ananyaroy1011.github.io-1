@@ -1,0 +1,189 @@
+/*-----------------------------------------------------------------------
+LAYOUT
+
+* @Version:    1.0 - 2016
+* @author:     Storytrail
+
+-----------------------------------------------------------------------*/
+
+body, html {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#loading-page {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  display: none;
+  width: 0;
+  height: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.preload,
+.preload-hold {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.background-lines {
+  position: fixed;
+  z-index: 1;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+}
+.background-lines.mobile { display: none; }
+.mobile .background-lines { display: none; }
+.mobile .background-lines.mobile { display: block; }
+
+.jason-wrapper {
+  position: relative;
+  z-index: 0;
+  width: 250px;
+  height: 445px;
+}
+
+.jason-wrapper .element-cover {
+  object-fit: contain;
+}
+
+#header-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  padding-top: 44px;
+}
+
+#header-main h1 {
+  position: relative;
+  width: 86px;
+  height: 90px;
+  margin: 0 auto ;
+}
+
+#header-main h1 a {
+  width: 86px;
+  height: 90px;
+  display: block;
+  text-indent: -5555px;
+  background: transparent url('../imgs/logo.svg') no-repeat;
+  background-size: 100% auto;
+}
+
+.content-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.content-wrapper h2 {
+  position: relative;
+  z-index: 2;
+  font: normal 12px "f-Regular", Helvetica, Arial, sans-serif;
+  text-align: center;
+  line-height: 12px;
+}
+
+.content-wrapper h3 {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  z-index: 2;
+  font: normal 20px/20px, Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c6c6c6;
+}
+
+
+.link {
+  color: #37984b;
+  text-decoration: none;
+}
+
+
+.content-wrapper .email-wrapper {
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+}
+
+
+.social {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  z-index: 2;
+}
+
+.social li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 19px;
+}
+
+.social li:last-child {
+  margin-right: 0;
+}
+
+.social .facebook {
+  position: relative;
+  width: 9px;
+  height: 17px;
+  top: -1px;
+}
+.social a { display: block; }
+.social a.disabled {
+  cursor: auto;
+  pointer-events: none;
+}
+.social a.disabled path {
+  fill: #CECECE;
+}
+
+.social .facebook:hover path { fill: #3b5998; }
+.social .instagram:hover path { fill: #3f729b; }
+.social .youtube:hover path { fill: #cd201f; }
+.social .twitter:hover path { fill: #55acee; }
+.social .tumblr:hover path { fill: #35465c; }
+
+.social .youtube {
+  width: 21px;
+  height: 15px;
+}
+
+.social .instagram {
+  width: 17px;
+  height: 17px;
+}
+
+.social .twitter {
+  width: 17px;
+  height: 15px;
+}
+.social .tumblr {
+  width: 10px;
+  height: 16px;
+}
+
+.social .instagram-svg path {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+
