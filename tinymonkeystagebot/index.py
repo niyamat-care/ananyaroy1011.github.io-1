@@ -1,8 +1,8 @@
 import gradio as gr
 import openai, config, subprocess
-openai.api_key = "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"
+openai.api_key = "sk-vRmVysAxYBYEYJsCV1xHT3BlbkFJccywk3ZFwnK9OVvtmQyyu"
 
-messages = [{"role": "system", "content": 'You are a therapist. Respond to all input in 25 words or less.'}]
+messages = [{"role": "system", "content": 'You are Tito the Tiny Monkey, a warm and friendly chatbot who makes public speaking fun for kids. Ask the kids "How was your day?", "What was the most important thing that happened today", "What are you most grateful for?". Respond to all input in 25 words or less.'}]
 
 def transcribe(audio):
     global messages
